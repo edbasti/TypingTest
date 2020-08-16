@@ -1,0 +1,109 @@
+body {
+  background-color: #485167;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20vh;
+}
+
+.App h1,
+.App div {
+  text-align: center;
+  padding: 5px;
+}
+
+.loader {
+  border: 16px solid #485167;
+  border-radius: 50%;
+  border-top: 16px solid #8892ac;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.Start-Button button {
+  background-color: #8892ac;
+  border: 2px solid #d7dbe3;
+  color: #f3f4f7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding: 10px 25px;
+}
+
+.Start-Button button:hover {
+  cursor: pointer;
+}
+
+.Timer {
+  color: #f3f4f7;
+  font-size: 45px;
+}
+
+.Form .words-container {
+  max-height: 50vh;
+  max-width: 70vw;
+  overflow: hidden;
+}
+
+.Form .word-to-type {
+  color: #f3f4f7;
+}
+
+.Form .words-before,
+.Form .words-after {
+  color: #8892ac;
+}
+
+.Form form input[type="text"] {
+  background-color: #485167;
+  border: none;
+  border-bottom: 2px solid #d7dbe3;
+  color: #f3f4f7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.Form form input[type="text"]:focus {
+  outline: none;
+}
+
+.header {
+  color: #f3f4f7;
+}
+/*# sourceMappingURL=App.css.map */

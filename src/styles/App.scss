@@ -1,0 +1,109 @@
+$dark-sea: #485167;
+$light-sea: #8892ac;
+$gray: #d7dbe3;
+$white: #f3f4f7;
+
+body {
+  background-color: $dark-sea;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+
+  h1,
+  div {
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+.loader {
+  border: 16px solid $dark-sea;
+  border-radius: 50%;
+  border-top: 16px solid $light-sea;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Start-Button {
+  button {
+    background-color: $light-sea;
+    border: 2px solid $gray;
+    color: $white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding: 10px 25px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.Timer {
+  color: $white;
+  font-size: 45px;
+}
+
+.Form {
+  .words-container {
+    max-height: 50vh;
+    max-width: 70vw;
+    overflow: hidden;
+  }
+
+  .word-to-type {
+    color: $white;
+  }
+
+  .words-before,
+  .words-after {
+    color: $light-sea;
+  }
+
+  form {
+    input[type="text"] {
+      background-color: $dark-sea;
+      border: none;
+      border-bottom: 2px solid $gray;
+      color: $white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      padding-bottom: 10px;
+      text-align: center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.header {
+  color: $white;
+}
